@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=pers_ti_personalization
+Comment=Personalisation
+Categories=personalisation
+Type=HildonControlPanelPlugin
+Icon=control_personalization
+X-control-panel-plugin=libpersonalisation.so
+X-Text-Domain=hildon-control-panel-personalisation

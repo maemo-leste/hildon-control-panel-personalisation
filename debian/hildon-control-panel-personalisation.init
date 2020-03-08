@@ -1,0 +1,16 @@
+#!/sbin/openrc-run
+
+description="Hildon Control Panel Personalisation"
+name="hildon-control-panel-personalisation"
+
+depend() {
+        before xorg xsession
+}
+
+start() {
+    ebegin "Starting hildon-control-panel-personalisation"
+	if [ ! -e /etc/hildon/theme/index.theme ]; then
+        ebegin "Setting default theme"
+        /usr/bin/personalisation /usr/share/themes/alpha;
+	fi
+}

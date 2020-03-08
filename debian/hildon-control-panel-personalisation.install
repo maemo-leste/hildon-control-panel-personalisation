@@ -1,0 +1,4 @@
+usr/bin/*
+usr/share/*
+usr/lib/*/libpersonalisation.so
+etc/sudoers.d/*

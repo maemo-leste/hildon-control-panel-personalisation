@@ -1,0 +1,16 @@
+hildon-control-panel-personalisation
+====================================
+
+Control panel applet (and supporting binaries) to change themes
+
+Description
+===========
+
+Control panel applet can be used to change Hildon theme(s) on the fly.
+
+* `libpersonalisation` is the control panel applet that really just invokes
+  `personalisation_app`
+* `personalisation_app` is a binary that shows a Hildon/GTK Dialog with various
+  themes present, and on select will invoke `personalisation`
+* `personalisation` is a binary that will change the system theme to the name
+  provided in argv.
