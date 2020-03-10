@@ -1,3 +1,9 @@
+hildon-control-panel-personalisation (1.0.1) unstable; urgency=low
+
+  * Fix GTK theme reload events
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Tue, 10 Mar 2020 15:00:23 +0100
+
 hildon-control-panel-personalisation (1.0.0) unstable; urgency=low
 
   * Initial Maemo Leste release
