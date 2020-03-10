@@ -1,3 +1,4 @@
 * Sort entries
 * Show error dialogs in certain cases
 * Removed all the columns that are not used
+* Complete on_row_tapped to deal with some other edge cases

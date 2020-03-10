@@ -261,15 +261,13 @@ void on_row_tapped(GtkTreeView * view, GtkTreePath * path, GTypeInstance * foo)
 					 "");
 	gtk_rc_reset_styles(settings);
 
-	GdkEventProperty event;
-	memset(&event, 0, sizeof(GdkEventProperty));
-	event.type = GDK_VISIBILITY_NOTIFY;
+	GdkEventClient event;
+	memset(&event, 0, sizeof(GdkEventClient));
+	event.type = GDK_CLIENT_EVENT;
 	event.window = 0;
 	event.send_event = 1;
-	event.atom = gdk_atom_intern("_GTK_READ_RCFILES", FALSE);
-	// XXX: event.state, event.time ?
-	//event.state = GDK_VISIBILITY_UNOBSCURED; // XXX: ?
-	//event.state = GDK_VISIBILITY_FULLY_OBSCURED; // XXX: ?
+	event.message_type = gdk_atom_intern("_GTK_READ_RCFILES", FALSE);
+	event.data_format = 8;
 	gdk_event_send_clientmessage_toall((GdkEvent *) & event);
 
 	// Send SIGHUP to maemo-launcher
