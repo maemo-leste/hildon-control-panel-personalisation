@@ -9,6 +9,7 @@ Package: hildon-control-panel-personalisation
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, hildon-control-panel (>= 1:2.2.1)
 Provides: theme-config, theme-default-settings
+Replaces: theme-default-settings, theme-default-settings-mr0
 Description: Control Panel Device Lock plugin
  Theme personalisation applet for Control Panel.
 
