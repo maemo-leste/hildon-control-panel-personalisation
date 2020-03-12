@@ -1,3 +1,9 @@
+hildon-control-panel-personalisation (1.0.2) unstable; urgency=low
+
+  * Create /etc/hildon if it doesn't exist
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Thu, 12 Mar 2020 09:47:52 +0100
+
 hildon-control-panel-personalisation (1.0.1) unstable; urgency=low
 
   * Fix GTK theme reload events
