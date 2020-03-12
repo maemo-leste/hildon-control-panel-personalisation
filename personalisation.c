@@ -6,6 +6,8 @@
 #include <dirent.h>
 #include <sys/types.h>
 
+#include <glib.h>
+
 #define BUFSIZE 64
 
 #define USER_CACHE_LAUNCH "/home/user/.cache/launch"
@@ -37,6 +39,11 @@ int main(int argc, char **argv)
 	if (unlink(temp_file)) {
 		fprintf(stderr,
 			"Could not remove just created temporary file\n");
+		goto done;
+	}
+
+	if (g_mkdir_with_parents("/etc/hildon", 0755)) {
+		fprintf(stderr, "Could not create /etc/hildon\n");
 		goto done;
 	}
 
