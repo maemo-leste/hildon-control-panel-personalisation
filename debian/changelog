@@ -1,3 +1,11 @@
+hildon-control-panel-personalisation (1.0.3) unstable; urgency=medium
+
+  * Add systemd support
+  * Drop dependency on glib
+  * Fix apt dependency error
+
+ -- Arthur Demchenkov <spinal.by@gmail.com>  Sun, 22 Mar 2020 11:47:43 +0300
+
 hildon-control-panel-personalisation (1.0.2) unstable; urgency=low
 
   * Create /etc/hildon if it doesn't exist
