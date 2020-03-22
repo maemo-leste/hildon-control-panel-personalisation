@@ -1,6 +1,6 @@
 #!/sbin/openrc-run
 ### BEGIN INIT INFO
-# Provides: droid4-pm
+# Provides: hildon-control-panel-personalisation
 # Required-Start:
 # Required-Stop:
 # Default-Start: 2 3 4 5
