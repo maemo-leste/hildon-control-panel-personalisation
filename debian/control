@@ -22,8 +22,5 @@ Depends:
 Provides:
  theme-config,
  theme-default-settings,
-Replaces:
- theme-default-settings,
- theme-default-settings-mr0,
 Description: Control Panel Personalisation plugin
  Theme personalisation applet for Control Panel.
