@@ -4,8 +4,7 @@ CFLAGS = -Wall -Werror -Wextra -std=gnu99 -O2 -ggdb -g
 
 bin_PROGRAMS = personalisation personalisation_app
 
-personalisation_CFLAGS = $(CFLAGS) $(GLIB_CFLAGS)
-personalisation_LDADD = $(GLIB_LIBS)
+personalisation_CFLAGS = $(CFLAGS)
 personalisation_SOURCES = personalisation.c
 
 personalisation_app_CFLAGS = $(CFLAGS) $(LIBHILDON_CFLAGS) $(LIBDBUS_CFLAGS) $(X11_CFLAGS) $(GCONF_CFLAGS)

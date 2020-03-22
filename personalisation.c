@@ -4,9 +4,8 @@
 #include <string.h>
 #include <errno.h>
 #include <dirent.h>
+#include <sys/stat.h>
 #include <sys/types.h>
-
-#include <glib.h>
 
 #define BUFSIZE 64
 
@@ -42,7 +41,7 @@ int main(int argc, char **argv)
 		goto done;
 	}
 
-	if (g_mkdir_with_parents("/etc/hildon", 0755)) {
+	if (mkdir("/etc/hildon", 0755)) {
 		fprintf(stderr, "Could not create /etc/hildon\n");
 		goto done;
 	}

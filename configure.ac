@@ -28,10 +28,6 @@ PKG_CHECK_MODULES(GCONF, gconf-2.0)
 AC_SUBST(GCONF_CFLAGS)
 AC_SUBST(GCONF_LIBS)
 
-PKG_CHECK_MODULES(GLIB, glib-2.0)
-AC_SUBST(GLIB_CFLAGS)
-AC_SUBST(GLIB_LIBS)
-
 hildoncontrolpaneldesktopentrydir="`$PKG_CONFIG --variable=plugindesktopentrydir hildon-control-panel`"
 AC_SUBST(hildoncontrolpaneldesktopentrydir)
 
