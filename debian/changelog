@@ -1,3 +1,10 @@
+hildon-control-panel-personalisation (1.0.7) unstable; urgency=medium
+
+  * Add LSB header to init script
+  * Fix error: Failed to add dependency on xsession
+
+ -- Arthur Demchenkov <spinal.by@gmail.com>  Tue, 24 Mar 2020 01:23:12 +0300
+
 hildon-control-panel-personalisation (1.0.6) unstable; urgency=low
 
   * Remove LSB headers again, until we figure out how to make them work.
