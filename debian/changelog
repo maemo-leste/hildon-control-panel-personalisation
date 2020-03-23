@@ -1,3 +1,9 @@
+hildon-control-panel-personalisation (1.0.6) unstable; urgency=low
+
+  * Remove LSB headers again, until we figure out how to make them work.
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Mon, 23 Mar 2020 19:10:03 +0100
+
 hildon-control-panel-personalisation (1.0.5) unstable; urgency=low
 
   * Fix LSB headers in init script
