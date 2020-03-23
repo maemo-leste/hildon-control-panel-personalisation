@@ -1,11 +1,12 @@
 #!/sbin/openrc-run
-
-description="Hildon Control Panel Personalisation"
-name="hildon-control-panel-personalisation"
-
-depend() {
-        before xorg xsession
-}
+### BEGIN INIT INFO
+# Provides: hildon-control-panel-personalisation
+# Required-Start:
+# Required-Stop:
+# Default-Start: 2 3 4 5
+# Default-Stop:
+# Short-Description: Hildon Control Panel Personalisation
+### END INIT INFO
 
 start() {
     ebegin "Starting hildon-control-panel-personalisation"
