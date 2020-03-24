@@ -1,7 +1,6 @@
 [Unit]
 Description=Hildon Control Panel Personalisation
 ConditionPathExists=!/etc/hildon/theme/index.theme
-Before=xsession
 
 [Service]
 ExecStart=/usr/bin/personalisation /usr/share/themes/alpha
