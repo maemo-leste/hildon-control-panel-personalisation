@@ -41,7 +41,7 @@ int main(int argc, char **argv)
 		goto done;
 	}
 
-	if (mkdir("/etc/hildon", 0755)) {
+	if ((mkdir("/etc/hildon", 0755) == -1) && (errno != EEXIST)) {
 		fprintf(stderr, "Could not create /etc/hildon\n");
 		goto done;
 	}
