@@ -1,3 +1,10 @@
+hildon-control-panel-personalisation (1.0.8) unstable; urgency=low
+
+  * Fix bug in personalisation.c that made it impossible to actually change
+    themes
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Fri, 03 Apr 2020 00:21:30 +0200
+
 hildon-control-panel-personalisation (1.0.6) unstable; urgency=low
 
   * Remove LSB headers again, until we figure out how to make them work.
