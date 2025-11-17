@@ -1,4 +1,4 @@
 usr/bin/*
 usr/share/*
-usr/lib/*/libpersonalisation.so
+usr/lib/*/hildon-control-panel/libpersonalisation.so
 etc/sudoers.d/*
